@@ -41,11 +41,15 @@
     --col-neu-cream: hsl(30, 38%, 92%);
     --col-neu-white: hsl(0, 0%, 100%);
 
-    /* Font size */
+    /* Default Font Settings */
     --fnt-size: 14px;
     font-size: var(--fnt-size);
+    
     font-family: "Montserrat", serif;
     font-weight: 500;
+
+    background-color: var(--col-neu-cream);
+
 }
 
 
