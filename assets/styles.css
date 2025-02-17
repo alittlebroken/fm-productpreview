@@ -52,11 +52,20 @@
 
 }
 
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 /* Card Styles */
 .cards {
     display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: minmax(350px, 600px);
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
 }
 
@@ -140,3 +149,14 @@
 /* Attribution */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/* Responsive Media Queries */
+@media screen and (min-width: 769px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card-image {
+    width: 250px;
+  }
+}
